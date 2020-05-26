@@ -16,7 +16,7 @@ To use SARDU-Net you need a Python 3 distribution such as [Anaconda](http://www.
 
 
 # Download 
-Getting *sardunet* is extremely easy: cloning this repository is all you need to do. The tools would be ready for you to run.
+Getting SARDU-Net is extremely easy: cloning this repository is all you need to do. The tools would be ready for you to run.
 
 If you use Linux or MacOS:
 
@@ -33,3 +33,15 @@ git clone https://github.com/fragrussu/sardunet.git
 5. You should now be able to use the code. Try to print the manual of a script, for instance of `extractvoxels_sardunet.py`, to make sure this is really the case:
 ```
 python ./sardunet/tools/extractvoxels_sardunet.py --help
+```
+
+# Citation
+If you use SARDU-Net, please cite our work:
+"SARDU-Net: a new method for model-free, data-driven experiment design in quantitative MRI". Grussu F, Blumberg SB, Battiston M, Ianuș A, Singh S, Gong F, Whitaker H, Atkninson D, Gandini Wheeler-Kingshott CAM, Punwani S, Panagiotaki E, Mertzanidou T and Alexander DC. Proceedings of the 2020 virtual annual meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). 
+
+# License
+MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved.
+Link to license [here](http://github.com/fragrussu/sardunet/blob/master/LICENSE).
+
+# Acknowledgements
+The development of SARDU-Net was funded by the Engineering and Physical Sciences Research Council (EPSRC EP/R006032/1, M020533/1, G007748, I027084, N018702). This project has received funding under the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 634541 and 666992, and from: Rosetrees Trust (UK, funding FG); Prostate Cancer UK Targeted Call 2014 (Translational Research St.2, project reference PG14-018-TR2); Spinal Research (UK), Wings for Life (Austria), Craig H. Neilsen Foundation (USA) for jointly funding the INSPIRED study; Wings for Life (#169111); UK Multiple Sclerosis Society (grants 892/08 and 77/2017); the Department of Health's National Institute for HealthResearch (NIHR) Biomedical Research Centres and UCLH NIHR Biomedical Research Centre; Champalimaud Centre for the Unknown, Lisbon (Portugal); European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 101003390.
