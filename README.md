@@ -1,11 +1,14 @@
-# sardunet
+# SARDU-Net: overview
 "Select and retrieve via direct upsampling" network (SARDU-Net) enables model-free, data-driven quantitative MRI (qMRI) protocol design.
 
-SARDU-Net selects subsets of informative qMRI measurements within lengthy pilot scans. The algorithm consists of two deep neural networks (DNNs) that are trained jointly end-to-end: a selector, identifying a subset of input qMRI measurements, and a predictor, estimating fully-sampled signals from such a subset. 
+SARDU-Net selects subsets of informative qMRI measurements within lengthy pilot scans. The algorithm consists of two deep neural networks (DNNs) that are trained jointly end-to-end: a *selector* identifies a subset of input qMRI measurements, while a *predictor* estimates the fully-sampled signals from such a subset. 
 
+The joint optimisation of *selector* and *predictor* enables the selection of informative sub-protocols of fixed size (i.e. shorter, clinically feasible) from densely-sampled qMRI signals (i.e. longer, difficult to implement in real clinical scenarios). 
+
+In the foreseen application of SARDU-Net, the densely-sampled qMRI measurements would typically come from a few rich pilot qMRI scans that are performed any way when setting up new MRI studies for quality control. These could include data from patients and data augmentation techniques could be used to increase signal examples from under-represented tissue types.
 
 # Dependencies
-To use *sardunet* you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
+To use SARDU-Net you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
