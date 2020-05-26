@@ -31,7 +31,7 @@ git clone https://github.com/fragrussu/sardunet.git
 ```
 ./sardunet/tools
 ```
-while a number of tutorials here:
+while a number of tutorials are available here:
 ```
 ./sardunet/tutorials
 ```
@@ -41,7 +41,8 @@ python ./sardunet/tools/extractvoxels_sardunet.py --help
 ```
 
 # Citation
-If you use SARDU-Net, please cite our work:
+If you use SARDU-Net, please remember to cite our work:
+
 "SARDU-Net: a new method for model-free, data-driven experiment design in quantitative MRI". Grussu F, Blumberg SB, Battiston M, Ianuș A, Singh S, Gong F, Whitaker H, Atkninson D, Gandini Wheeler-Kingshott CAM, Punwani S, Panagiotaki E, Mertzanidou T and Alexander DC. Proceedings of the 2020 virtual annual meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). 
 
 # License
