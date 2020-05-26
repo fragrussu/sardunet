@@ -41,7 +41,7 @@ If you use SARDU-Net, please cite our work:
 "SARDU-Net: a new method for model-free, data-driven experiment design in quantitative MRI". Grussu F, Blumberg SB, Battiston M, Ianuș A, Singh S, Gong F, Whitaker H, Atkninson D, Gandini Wheeler-Kingshott CAM, Punwani S, Panagiotaki E, Mertzanidou T and Alexander DC. Proceedings of the 2020 virtual annual meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). 
 
 # License
-MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved.
+SARDU-Net is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved.
 Link to license [here](http://github.com/fragrussu/sardunet/blob/master/LICENSE).
 
 # Acknowledgements
