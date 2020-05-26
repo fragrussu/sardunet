@@ -23,13 +23,17 @@ If you use Linux or MacOS:
 
 1. Open a terminal;
 2. Navigate to your destination folder;
-3. Clone MRItools:
+3. Clone SARDU-Net:
 ```
 git clone https://github.com/fragrussu/sardunet.git 
 ```
-4. MRItools is ready for you in `./sardunet` with the tools available here: 
+4. SARDU-Net is ready for you in `./sardunet`. SARDU-Net tools are available here: 
 ```
 ./sardunet/tools
+```
+while a number of tutorials here:
+```
+./sardunet/tutorials
 ```
 5. You should now be able to use the code. Try to print the manual of a script, for instance of `extractvoxels_sardunet.py`, to make sure this is really the case:
 ```
