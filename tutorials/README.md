@@ -11,7 +11,7 @@ The python class `sardunet_v1` included in the [`sardunet.py`](https://github.co
 * [`downsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) downsamples a qMRI scan keeping measurements selected by SARDU-Net.
 
 
-All tools listed above contain a detailed *help* manual, which you can print simply as `python </PATH/TO/SCRIPT> --help`. Additionally, these simple tutorials show the tools in action:  
+All tools listed above contain a detailed *help* manual, which you can print by simply typing in your terminal `python </PATH/TO/TOOL> --help`. Additionally, these simple tutorials show the tools in action:  
 
 * [**Tutorial 1**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial1.md) shows how to extract voxels for SARDU-Net training. 
 
