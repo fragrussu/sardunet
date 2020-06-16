@@ -33,16 +33,17 @@ git clone https://github.com/fragrussu/sardunet.git
 python ./sardunet/ainas/extractvoxels_sardunet.py --help
 ```
 
-# Tutorials
-A number of [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) demonstrate how to use SARDU-Net. Specifically, they will show you how to: 
+# SARDU-Net class and tutorials
 
-* extract voxels for SARDU-Net training; 
+SARDU-Net is implemented in the form of the `sardunet_v1` python class, which is defined in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file. Additionally, command line tools are provided to train and deploy `sardunet_v1` objects.
 
-* train a SARDU-Net, tuning the learning settings; 
+A number of [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) demonstrate how to use these tools.  
 
-* access the sub-protocols selected by SARDU-Net; 
+* [**Tutorial 1**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial1.md) shows how to extract voxels for SARDU-Net training. 
 
-* use a trained SARDU-Net to downsample or upsample a qMRI scan.
+* [**Tutorial 2**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial2.md) shows how to train a SARDU-Net, select different learning settings and access qMRI sub-protocols selected by SARDU-Net; 
+
+* [**Tutorial 3**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial3.md) shows how to use a trained SARDU-Net to downsample or upsample a qMRI scan.
 
 # Citation
 If you use SARDU-Net, please remember to cite our work:
