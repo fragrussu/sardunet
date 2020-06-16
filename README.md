@@ -7,8 +7,6 @@ The joint optimisation of *selector* and *predictor* DNNs enables the selection 
 
 In the SARDU-Net framework, the densely-sampled qMRI measurements would typically come from a few rich pilot qMRI scans that are performed any way when setting up new MRI studies for quality control. These could include data from patients and data augmentation techniques could be used to increase signal examples from under-represented tissue types.
 
-The code will be made avaiable in the coming days... Apologies for the delay!
-
 
 # Dependencies
 To use SARDU-Net you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
@@ -29,23 +27,29 @@ If you use Linux or MacOS:
 ```
 git clone https://github.com/fragrussu/sardunet.git 
 ```
-4. SARDU-Net is ready for you in `./sardunet`. SARDU-Net tools are available here: 
-```
-./sardunet/ainas
-```
-(*ainas* means *tools* in Sardinian language), while a number of tutorials are available here:
-```
-./sardunet/tutorials
-```
+4. SARDU-Net is ready for you in `./sardunet`. SARDU-Net tools are available in the [`./sardunet/ainas`]((https://github.com/fragrussu/sardunet/tree/master/ainas)) folder (*ainas* means *tools* in Sardinian language), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
 5. You should now be able to use the code. Try to print the manual of a script, for instance of `extractvoxels_sardunet.py`, to make sure this is really the case:
 ```
 python ./sardunet/tools/extractvoxels_sardunet.py --help
 ```
 
+# Tutorials
+A number of [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) are included in this repository. They demonstrate how to use SARDU-Net. Specifically, they will show you how to 
+
+* extract voxels for SARDU-Net training; 
+
+* train a SARDU-Net, tuning the learning settings; 
+
+* access the sub-protocols selected by SARDU-Net; 
+
+* use a trained SARDU-Net to downsample or upsample a qMRI scan.
+
 # Citation
 If you use SARDU-Net, please remember to cite our work:
 
-"SARDU-Net: a new method for model-free, data-driven experiment design in quantitative MRI". Grussu F, Blumberg SB, Battiston M, Ianuș A, Singh S, Gong F, Whitaker H, Atkninson D, Gandini Wheeler-Kingshott CAM, Punwani S, Panagiotaki E, Mertzanidou T and Alexander DC. Proceedings of the 2020 virtual annual meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). 
+"SARDU-Net: a new method for model-free, data-driven experiment design in quantitative MRI". Grussu F, Blumberg SB, Battiston M, Ianuș A, Singh S, Gong F, Whitaker H, Atkinson D, Gandini Wheeler-Kingshott CAM, Punwani S, Panagiotaki E, Mertzanidou T and Alexander DC. Proceedings of the 2020 virtual annual meeting of the International Society for Magnetic Resonance in Medicine (ISMRM). 
+
+"*Select and retrieve via direct upsampling* network (SARDU-Net): a data-driven, model-free, deep learning approach for quantitative MRI protocol design". Grussu F, Blumberg SB, Battiston M, Kakkar LS, Lin H, Ianuș A, Schneider T, Singh S, Bourne R, Punwani S, Atkinson D, Gandini Wheeler-Kingshott CAM, Panagiotaki E, Mertzanidou T and Alexander DC. biorxiv 2020, DOI: [10.1101/2020.05.26.116491](https://doi.org/10.1101/2020.05.26.116491). 
 
 # License
 SARDU-Net is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved.
