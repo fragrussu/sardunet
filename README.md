@@ -30,7 +30,7 @@ git clone https://github.com/fragrussu/sardunet.git
 4. SARDU-Net is ready for you in `./sardunet`. SARDU-Net tools are available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (*ainas* means *tools* in Sardinian language), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
 5. You should now be able to use the code. Try to print the manual of a script, for instance of `extractvoxels_sardunet.py`, to make sure this is really the case:
 ```
-python ./sardunet/tools/extractvoxels_sardunet.py --help
+python ./sardunet/ainas/extractvoxels_sardunet.py --help
 ```
 
 # Tutorials
