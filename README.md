@@ -27,7 +27,7 @@ If you use Linux or MacOS:
 ```
 git clone https://github.com/fragrussu/sardunet.git 
 ```
-4. SARDU-Net tools are now available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (*ainas* means *tools* in [**Sardinian language!**](http://en.wikipedia.org/wiki/Sardinian_language)), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
+4. SARDU-Net tools are now available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (*ainas* means *tools* in [**Sardinian language**](http://en.wikipedia.org/wiki/Sardinian_language)), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
 5. You should now be able to use the code. Try to print the manual of a script, for instance of `extractvoxels_sardunet.py`, to make sure this is really the case:
 ```
 python ./sardunet/ainas/extractvoxels_sardunet.py --help
