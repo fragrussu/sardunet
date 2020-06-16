@@ -34,7 +34,7 @@ python ./sardunet/ainas/extractvoxels_sardunet.py --help
 ```
 
 # Tutorials
-A number of [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) are included in this repository. They demonstrate how to use SARDU-Net. Specifically, they will show you how to 
+A number of [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) demonstrate how to use SARDU-Net. Specifically, they will show you how to: 
 
 * extract voxels for SARDU-Net training; 
 
