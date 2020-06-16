@@ -1,6 +1,6 @@
 # SARDU-Net: tutorials
 
-The python class (`sardunet_v1`) included in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file defines the architecture of SARDU-Net. The following command line tools are also provided: 
+The python class `sardunet_v1` included in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file defines the architecture of SARDU-Net. The following command line tools are also provided: 
 
 * [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) extracts measurements from qMRI scans storerd in NIFTI format to train a SARDU-Net;
 
@@ -13,7 +13,7 @@ The python class (`sardunet_v1`) included in the [`sardunet.py`](https://github.
 * [`downsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) downsamples a qMRI scans keeping only the measurements selected SARDU-Net.
 
 
-The following [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) show these tools in action:  
+All tools listed above contain a detailed *help* manual, which you can print simply as `python </PATH/TO/SCRIPT> --help`. Additionally, these simple [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) show the tools in action:  
 
 * [**Tutorial 1**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial1.md) shows how to extract voxels for SARDU-Net training. 
 
