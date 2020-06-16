@@ -1,7 +1,7 @@
 # SARDU-Net: overview
-"*Select and retrieve via direct upsampling*" network (SARDU-Net) enables model-free, data-driven quantitative MRI (qMRI) protocol design.
+"***Select and retrieve via direct upsampling***" network (SARDU-Net) enables model-free, data-driven quantitative MRI (qMRI) protocol design.
 
-SARDU-Net selects subsets of informative qMRI measurements within lengthy pilot scans. The algorithm consists of two deep neural networks (DNNs) that are trained jointly end-to-end: a *selector* identifies a subset of input qMRI measurements, while a *predictor* estimates the fully-sampled signals from such a subset. 
+SARDU-Net selects subsets of informative qMRI measurements within lengthy pilot scans. The algorithm consists of two deep neural networks (DNNs) that are trained jointly end-to-end: a ***selector*** identifies a subset of input qMRI measurements, while a ***predictor*** estimates the fully-sampled signals from such a subset. 
 
 The joint optimisation of *selector* and *predictor* DNNs enables the selection of informative sub-protocols of fixed size (i.e. shorter, clinically feasible) from densely-sampled qMRI signals (i.e. longer, difficult to implement in real clinical scenarios). 
 
@@ -27,7 +27,7 @@ If you use Linux or MacOS:
 ```
 git clone https://github.com/fragrussu/sardunet.git 
 ```
-4. SARDU-Net tools are now available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (note that *ainas* means *tools* in Sardinian language!), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
+4. SARDU-Net tools are now available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (*ainas* means *tools* in [**Sardinian language!**](http://en.wikipedia.org/wiki/Sardinian_language)), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
 5. You should now be able to use the code. Try to print the manual of a script, for instance of `extractvoxels_sardunet.py`, to make sure this is really the case:
 ```
 python ./sardunet/ainas/extractvoxels_sardunet.py --help
