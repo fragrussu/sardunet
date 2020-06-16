@@ -35,13 +35,13 @@ python ./sardunet/ainas/extractvoxels_sardunet.py --help
 
 # SARDU-Net class and tutorials
 
-SARDU-Net is implemented in the form of the `sardunet_v1` python class, which is defined in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file. Additionally, command line tools are provided to train and deploy `sardunet_v1` objects.
+SARDU-Net is implemented in the `sardunet_v1` python class, which is defined in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file. Additional command line tools are provided to train and deploy `sardunet_v1` objects.
 
 A number of [tutorials](https://github.com/fragrussu/sardunet/tree/master/tutorials) demonstrate how to use these tools.  
 
 * [**Tutorial 1**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial1.md) shows how to extract voxels for SARDU-Net training. 
 
-* [**Tutorial 2**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial2.md) shows how to train a SARDU-Net, select different learning settings and access qMRI sub-protocols selected by SARDU-Net; 
+* [**Tutorial 2**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial2.md) shows how to train a SARDU-Net, choosing the learning settings and accessing qMRI sub-protocols selected by a trained cun SARDU-Net; 
 
 * [**Tutorial 3**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial3.md) shows how to use a trained SARDU-Net to downsample or upsample a qMRI scan.
 
