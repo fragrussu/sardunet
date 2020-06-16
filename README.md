@@ -31,9 +31,9 @@ git clone https://github.com/fragrussu/sardunet.git
 ```
 4. SARDU-Net is ready for you in `./sardunet`. SARDU-Net tools are available here: 
 ```
-./sardunet/tools
+./sardunet/ainas
 ```
-while a number of tutorials are available here:
+(*ainas* means *tools* in Sardinian language), while a number of tutorials are available here:
 ```
 ./sardunet/tutorials
 ```
