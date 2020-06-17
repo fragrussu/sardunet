@@ -74,7 +74,14 @@ There are several training options you can tune, as for example: learning rate (
 A practical way to find an acceptable SARDU-Net architecture and good learning options is to try several different combinations, in a grid search fashion. The combination providing the lowest validation loss could then be chosen for subsequent experiments. 
 
 
-Finally, you can also train a SARDU-Net minimising a L1 loss (`--lossnorm`), using different signal normalisation strategies (options `--prct` `--small`) and using a specific seed number to initialise the network parameters (`--seed`)
+Finally, you can also train a SARDU-Net minimising a L1 loss (option `--lossnorm`), using different signal normalisation strategies (options `--prct` and `--small`) and using a specific seed number to initialise the network parameters (option `--seed`).
 
 
+## b) Use a trained SARDU-Net to upsample qMRI experiments
+In most applications finding informative sub-protocols is what one is after - you could now pick the indices of the selected measurements and go to the scanner room to set up your qMRI experiment, which should now be considerably shorter.
 
+
+However, SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI protocols. You could try to exploit it to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired. This is exactly the idea behind the 2019 MICCAI CDMRI workshop challenge known as ['MUDI'](http://cmic.cs.ucl.ac.uk/cdmri19/challenge.html), which SARDU-Net won in October 2019. 
+
+
+Tutorial 3 will show you how to downsample/upsample qMRI experiments with a trained SARDU-Net.
