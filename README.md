@@ -27,7 +27,7 @@ If you use Linux or MacOS:
 ```
 git clone https://github.com/fragrussu/sardunet.git 
 ```
-4. SARDU-Net tools (i.e. classes and command-line scripts) are now available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (*ainas* means *tools* in [**Sardinian language**](http://sc.wikipedia.org/wiki/Limba_sarda)), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of useful tutorials. 
+4. SARDU-Net tools (i.e. a python class and command-line tools to train and use objects of that class) are now available in the [`./sardunet/ainas`](https://github.com/fragrussu/sardunet/tree/master/ainas) folder (*ainas* means *tools* in [**Sardinian language**](http://sc.wikipedia.org/wiki/Limba_sarda)), while [`./sardunet/tutorials`](https://github.com/fragrussu/sardunet/tree/master/tutorials) contains a number of tutorials. 
 5. You should now be able to use the code. Try to print the manual of a tool, for instance of `train_sardunet_v1.py`, to make sure this is really the case:
 ```
 python ./sardunet/ainas/train_sardunet_v1.py --help
