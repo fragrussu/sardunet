@@ -3,8 +3,6 @@ This tutorial demonstrates how to train a SARDU-Net given a training and validat
 
 It is assumed that qMRI measurements have been extracted to binary files `datatrain.bin` and `dataval.bin` in a folder named `sardutrain`, as described in [Tutorial 1](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial1.md). It is also assumed that you run SARDU-Net in a [bash shell](https://www.gnu.org/software/bash), and that the variable `SARDULIB` stores the location of the [SARDU-Net tools](https://github.com/fragrussu/sardunet/tree/master/ainas) in your file system (for example: `SARDULIB="/Users/myname/lib/python/sardunet/ainas"`).
 
-At present, SARDU-Net can be trained only on CPU. We plan to release a GPU implementation soon.
-
 ## a) Default training
 Training a SARDU-Net is extremely easy: all you have to do is to specify training and validation sets (here `datatrain.bin` and `dataval.bin`, which contain 16 diffusion-relaxation measurements), as well as a root string for the output folder (say, for example, `sarduout`):
 ```
