@@ -77,7 +77,7 @@ A practical way to find an acceptable SARDU-Net architecture and good learning o
 Finally, you can also train a SARDU-Net minimising a L1 loss (option `--lossnorm`), using different signal normalisation strategies (options `--prct` and `--small`) and using a specific seed number to initialise the network parameters (option `--seed`).
 
 
-## b) Use a trained SARDU-Net to upsample qMRI experiments
+## c) Use a trained SARDU-Net to upsample qMRI experiments
 In most applications finding informative sub-protocols from rich pilot scans should be enough. You could now pick the indices of the selected measurements and go to the scanner room to set up your new qMRI experiment, which should now be considerably shorter than the previous one used to acquire the pilot training data.
 
 
