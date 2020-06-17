@@ -14,16 +14,18 @@ help(sardunet.sardunet_v1)
 
 Additionaly, a number of command line tools are provided to help you train and use SARDU-Net objects: 
 
-* [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) extracts measurements from qMRI scans storerd in NIFTI format to train a SARDU-Net;
+* [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) to extract measurements from qMRI scans storerd in NIFTI format as required to train a SARDU-Net;
 
-* [`train_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/train_sardunet_v1.py) trains a SARDU-Net;
+* [`train_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/train_sardunet_v1.py) to train a SARDU-Net;
 
-* [`upsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) upsamples a qMRI scan containing the measurements selected by SARDU-Net to a richer qMRI protocols;
+* [`downsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) to downsample a qMRI scan keeping measurements selected by SARDU-Net.=;
 
-* [`downsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) downsamples a qMRI scan keeping measurements selected by SARDU-Net.
+* [`upsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) to upsamples a qMRI scan containing the measurements selected by SARDU-Net to a richer qMRI protocol.
 
 
-All tools listed above contain a detailed *help* manual, which you can print by simply typing in your terminal `python </PATH/TO/TOOL> --help` (for example, `python train_sardunet_v1.py --help`). Additionally, these simple tutorials show the tools in action:  
+All tools listed above have a detailed *help* manual, which you can print by simply typing in your terminal `python </PATH/TO/TOOL> --help` (for example, `python train_sardunet_v1.py --help`). 
+
+Additionally, these simple tutorials show the tools in action:  
 
 * [**Tutorial 1**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial1.md) shows how to extract voxels for SARDU-Net training. 
 
