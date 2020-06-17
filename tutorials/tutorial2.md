@@ -13,13 +13,13 @@ python $SARDULIB/train_sardunet_v1.py datatrain.bin dataval.bin sarduout
 
 This should print something along these lines:
 
-<img src="/Users/fgrussu/lib/python/github_202006/sardunet/tutorials/sardutrain.png" width="1024">
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sardutrain.png" width="1024">
 
 By default, a SARDU-Net searching sub-protocols containing half the number of the input qMRI measurements is trained, i.e. here 8 out 16 measurements (if you need to select a different number of measurements, use option ` --dsel`). Also, by default training is performed for 500 epochs with dropout regularisation of 0.2, learning rate of 0.001, and using mini-batches of 1000 voxels to minimise an L2 loss. Two layers are used for both *selector* and *predictor* neural networks; signals smaller than 10<sup>-6</sup> are clamped to this number and then all signals normalised to the 99% percentile of the signal distribution.  
 
 Training results will be stored in an output directory whose name contains all salient information regarding training, which are appended to the root string specified on command line. In this example, the output directory will be called `sarduout_nnsel16-12-16_psel0.2_dsel8_nnpred16-12-16_ppred0.2_noepoch500_lr0.001_mbatch1000_seed257891_lossL2_prct99.0_small1e-06`. Its content will be:
 
-<img src="/Users/fgrussu/lib/python/github_202006/sardunet/tutorials/sarduout.png" width="1024">
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduout.png" width="1024">
 
 The most important output is perhaps `nnet_lossvalmin_measidx.txt`, storing the indices of the selected qMRI measurements (starting from 0!). For example,
 ```
