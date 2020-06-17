@@ -51,7 +51,7 @@ python $SARDULIB/extractvoxels_sardunet.py . datatrain.bin dataval.bin --usemask
 ```
 You should see something like:
 
-<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/extractverbose.png" width="48">
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/extractverbose.png" width="256">
 
 ![extractverbose](https://github.com/fragrussu/sardunet/blob/master/tutorials/extractverbose.png)
 
