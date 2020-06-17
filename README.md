@@ -34,8 +34,7 @@ python ./sardunet/ainas/extractvoxels_sardunet.py --help
 ```
 
 # SARDU-Net class and tutorials
-
-SARDU-Net is implemented as `sardunet_v1` python class, defined in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file. Details on `sardunet_v1` methods can be found [here](https://github.com/fragrussu/sardunet/blob/master/tutorials/README.md). 
+SARDU-Net is implemented in the `sardunet_v1` python class, defined in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file. Details on `sardunet_v1` methods can be found [here](https://github.com/fragrussu/sardunet/blob/master/tutorials/README.md). 
 
 Command line tools are also provided to help you train and deploy `sardunet_v1` objects. These [tutorials](https://github.com/fragrussu/sardunet/blob/master/tutorials/README.md) demonstrate how to use the tools:  
 
