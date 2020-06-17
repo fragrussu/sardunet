@@ -41,11 +41,11 @@ You are now ready to extract qMRI measurements from the voxels in your training 
 
 * Navigate to the `sardutrain` directory, where scans `scan_1.nii`, `scan_2.nii`, ... are stored.
 
-* Extract voxels. If you do not have masks, type:
+* Extract voxels. Type:
 ```
 python $SARDULIB/extractvoxels_sardunet.py . datatrain.bin dataval.bin
 ```
-or use the `--usemask 1` flag if you have masks:
+if you do not have masks, or use the `--usemask 1` flag if you have masks:
 ```
 python $SARDULIB/extractvoxels_sardunet.py . datatrain.bin dataval.bin --usemask 1
 ```
@@ -57,7 +57,7 @@ You should see something like:
 
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sigmat.png" width="512">
 
-* By default, 80% of voxels are kept in training set, while 20% are used as validation set. You can change this ratio with the `--valratio` option (default is 0.2, i.e. 20% of voxels to be used for validation). 
+* By default, 80% of voxels are kept as part of the actual training set, while 20% are used as validation set. You can change this ratio with the `--valratio` option (default is 0.2, i.e. 20% of voxels to be used for validation). 
 
 * Finally, options `--matlab_train` and `--matlab_val` allow you to save copies of the training and/or validation sets in [Matlab](https://mathworks.com) format.
 
