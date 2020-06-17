@@ -1,6 +1,18 @@
 # SARDU-Net: tutorials
 
-The python class `sardunet_v1` included in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file defines the architecture of SARDU-Net. The following command line tools are also provided: 
+The python class `sardunet_v1` included in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file defines the architecture of SARDU-Net. contains the following methods:
+* `__init__()`: the constructor;
+* `selector()`: a forward pass through the *selector* sub-network of a SARDU-Net;
+* `predictor()`: a forward pass through the *predictor* sub-network of a SARDU-Net;
+* `forward()`: a forward pass through the entire SARDU-Net.
+
+Each method has a detailed *help*, which you can print from python this way:
+```
+import sardunet
+help(sardunet.sardunet_v1)
+```
+
+Additionaly, a number of command line tools are provided to help you train and use SARDU-Net objects. The command line tools available are: 
 
 * [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) extracts measurements from qMRI scans storerd in NIFTI format to train a SARDU-Net;
 
