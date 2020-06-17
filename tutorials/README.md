@@ -8,8 +8,8 @@ The python class `sardunet_v1` included in the [`sardunet.py`](https://github.co
 
 Each method has a detailed *help manual*. From a [Jupyter notebook](https://jupyter.org) or in your python interpreter prompt, you can check the manual by typing:
 ```
-import sardunet
-help(sardunet.sardunet_v1)
+>>> import sardunet
+>>> help(sardunet.sardunet_v1)
 ```
 
 Additionaly, a number of command line tools are provided to help you train and use SARDU-Net objects: 
