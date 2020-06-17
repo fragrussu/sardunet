@@ -14,9 +14,9 @@ Below it is asssumed that you will be using SARDU-Net in a [bash shell](https://
 * Put your scans inside `sardutrain`. Make sure your scans are in [NIFTI1](https://nifti.nimh.nih.gov/nifti-1) format (I use [dcm2niix](https://github.com/rordenlab/dcm2niix) to convert DICOMs to NIFTI).
 
 
-* Make sure you name your scans as `scan_1.nii`, ..., `scan_N.nii`. Each scan should be a 4D NIFTI, with different qMRI measurements arranged along the 4th dimension. All scans should have same number of qMRI measurements, and in the same order.
+* Make sure you name your scans as `scan_1.nii`, `scan_2.nii`, ... . Each scan should be a 4D NIFTI, with different qMRI measurements arranged along the 4th dimension. All scans should have same number of qMRI measurements, and in the same order.
 
-* If you have binary masks of the organ/tissue of interest, include them in the same folder, making sure to name them as `mask_1.nii`, ..., `mask_N.nii` (obviously `mask_1.nii` corresponds to `scan_1.nii`, `mask_2.nii` corresponds to `scan_2.nii`, etc).
+* If you have binary masks of the organ/tissue of interest, include them in the same folder, making sure to name them as `mask_1.nii`, `mask_2.nii`, ... (obviously `mask_1.nii` corresponds to `scan_1.nii`, `mask_2.nii` corresponds to `scan_2.nii`, etc).
 
 * MRI signal intensities from the different scans should be broadly comparable. While it is understood that each scan will have its own rx/tx smooth bias field, wild differences in signals intensities (for example: signals in `scan_1.nii` vary between 5.0 and 9.0, while signals in `scan_2.nii` vary between 1250.0 and 7000.0) would affect SARDU-Net performance. A simple way to avoid such wild intensity variations is to divide each scans by its median signal intensity. This could be done easily with [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki): assuming that you have, for instance, 3 scans (so *N = 3*), you can run something like:
 ```
