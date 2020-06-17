@@ -53,7 +53,7 @@ The meaning of all other output files is described briefly below.
 * `nnet_epoch500.pth`: SARDU-Net at last epoch (pytorch `.pth` file extension)
 * `nnet_epoch500_measidx.txt`: indices of selected measurements at the last epoch (indices start from 0!)
 
-You can load all binary files (`.bin`) into memory with [pickle module](https://docs.python.org/3/library/pickle.html) in python. For example, in your [Jupyter notebook](https://jupyter.org) or in your python interpreter prompt you can type something like:
+You can load all binary files (`.bin`) into memory with the [pickle module](https://docs.python.org/3/library/pickle.html) in python. For example, in your [Jupyter notebook](https://jupyter.org) or in your python interpreter prompt you can type something like:
 ```
 >>> import numpy as np
 >>> import pickle as pk
