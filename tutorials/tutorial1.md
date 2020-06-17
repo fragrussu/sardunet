@@ -53,7 +53,7 @@ You should see something like:
 
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/extractverbose.png" width="512">
 
-* This should have extracted in the current folder training and validation sets. They should have been saved as `datatrain.bin` (training set) and `dataval.bin` (validation set). These are binary files that store MRI signals as 2D matrices (rows: different voxels; columns: different qMRI measurements). Here an example of the content `datatrain.bin` of from some diffusion-relaxation imaging data:
+* This should have extracted in the current folder training and validation sets. They should have been saved as `datatrain.bin` (training set) and `dataval.bin` (validation set). These are binary files that store MRI signals as 2D matrices (rows: different voxels; columns: different qMRI measurements). Here an example of the content `datatrain.bin`, as obtained from some diffusion-relaxation [prostate MRI data](https://doi.org/10.1101/2020.05.26.116491):
 
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sigmat.png" width="512">
 
