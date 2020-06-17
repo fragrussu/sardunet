@@ -30,7 +30,7 @@ The most important output is perhaps `nnet_lossvalmin_measidx.txt`, storing the 
 11
 12
 ```
-means that measurement 0 was selected, measurement 1 discarded, measurement 2 selected, measurement 3 discarded, etc ...
+means that measurement 0 was selected, measurement 1 was not, measurement 2 was, measurement 3 was not, etc ...
 
 
 The meaning of all other output files is described briefly below. 
