@@ -1,7 +1,7 @@
 # Tutorial 2: train a SARDU-Net
 This tutorial demonstrates how to train a SARDU-Net given a training and validation sets of qMRI measurements. 
 
-It is assumed that qMRI measurements have been extracted to binary files `datatrain.bin` and `dataval.bin` in a folder named `sardutrain`, as described in [tutorial 1](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial1.md). It is also assumed that the variable `SARDULIB` stores the location of the [SARDU-Net tools](https://github.com/fragrussu/sardunet/tree/master/ainas) in your file system (for example: `SARDULIB="/Users/myname/lib/python/sardunet/ainas"`).
+It is assumed that qMRI measurements have been extracted to binary files `datatrain.bin` and `dataval.bin` in a folder named `sardutrain`, as described in [Tutorial 1](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial1.md). It is also assumed that the variable `SARDULIB` stores the location of the [SARDU-Net tools](https://github.com/fragrussu/sardunet/tree/master/ainas) in your file system (for example: `SARDULIB="/Users/myname/lib/python/sardunet/ainas"`).
 
 At present, SARDU-Net can be trained only on CPU. We plan to release a GPU implementation soon.
 
@@ -84,4 +84,4 @@ In most applications finding informative sub-protocols is what one is after - yo
 However, SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI protocols. You could try to exploit it to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired. This is exactly the idea behind the 2019 MICCAI CDMRI workshop challenge known as ['MUDI'](http://cmic.cs.ucl.ac.uk/cdmri19/challenge.html), which SARDU-Net won in October 2019. 
 
 
-Tutorial 3 will show you how to downsample/upsample qMRI experiments with a trained SARDU-Net.
+[Tutorial 3](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial3.md) will show you how to downsample/upsample qMRI experiments with a trained SARDU-Net.
