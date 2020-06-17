@@ -51,11 +51,11 @@ python $SARDULIB/extractvoxels_sardunet.py . datatrain.bin dataval.bin --usemask
 ```
 You should see something like:
 
-![extractverbose](/Users/fgrussu/lib/python/github_202006/sardunet/tutorials/trainingdir/extractverbose.png)
+![extractverbose](https://github.com/fragrussu/sardunet/blob/master/tutorials/extractverbose.pngg)
 
 * This should have extracted in the current folder training and validation sets. They should have been saved as `datatrain.bin` (training set) and `dataval.bin` (validation set). These are binary files that store MRI signals as 2D matrices (rows: different voxels; columns: different qMRI measurements). Here an example of the content `datatrain.bin` of from some diffusion-relaxation imaging data:
 
-![extractverbose](/Users/fgrussu/lib/python/github_202006/sardunet/tutorials/trainingdir/sigmat.png)
+![sigmat](https://github.com/fragrussu/sardunet/blob/master/tutorials/sigmat.png)
 
 * By default, 80% of voxels are kept in training set, while 20% are used as validation set. You can change this ratio with the `--valratio` option (default is 0.2, i.e. 20% of voxels to be used for validation). 
 
