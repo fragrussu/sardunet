@@ -15,7 +15,7 @@ This should print something along these lines:
 
 By default, a SARDU-Net searching sub-protocols containing half the number of the input qMRI measurements is trained, i.e. here 8 out 16 measurements (if you need to select a different number of measurements, use option ` --dsel`). Also, by default training is performed for 500 epochs with dropout regularisation of 0.2, learning rate of 0.001, and using mini-batches of 1000 voxels to minimise an L2 loss. Two layers are used for both *selector* and *predictor* neural networks; signals smaller than 10<sup>-6</sup> are clamped to this number and then all signals normalised to the 99% percentile of the signal distribution.  
 
-Training results will be stored in an output directory whose name contains all salient information regarding training, which are appended to the root string specified on command line. In this example, the output directory will be called `sarduout_nnsel16-12-16_psel0.2_dsel8_nnpred16-12-16_ppred0.2_noepoch500_lr0.001_mbatch1000_seed257891_lossL2_prct99.0_small1e-06`. Its content will be:
+Training results will be stored in an output directory whose name contains all salient training parameters, which are appended to the root string specified when running `train_sardunet_v1.py`. In this example, the output directory is: `sarduout_nnsel16-12-16_psel0.2_dsel8_nnpred16-12-16_ppred0.2_noepoch500_lr0.001_mbatch1000_seed257891_lossL2_prct99.0_small1e-06`. Its content will be:
 
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduout.png" width="1024">
 
@@ -69,17 +69,17 @@ There are several training options you can tune, as for example: learning rate (
 
 
 
-A practical way to find an acceptable SARDU-Net architecture and good learning options is to try several different combinations, in a grid search fashion. The combination providing the lowest validation loss could then be chosen for subsequent experiments. 
+A practical way to find an acceptable SARDU-Net architecture and good learning options is to try different combinations, in a grid search fashion. The combination providing the lowest validation loss could then be chosen for subsequent experiments. 
 
 
-Finally, you can also train a SARDU-Net minimising a L1 loss (option `--lossnorm`), using different signal normalisation strategies (options `--prct` and `--small`) and using a specific seed number to initialise the network parameters (option `--seed`).
+Finally, you can also train a SARDU-Net minimising a L1 loss (option `--lossnorm`), adopting different signal normalisation strategies (options `--prct` and `--small`) and using a specific seed number to initialise the network parameters (option `--seed`).
 
 
 ## c) Use a trained SARDU-Net to upsample qMRI experiments
-In most applications finding informative sub-protocols from rich pilot scans should be enough. You could now pick the indices of the selected measurements and go to the scanner room to set up your new qMRI experiment, which should now be considerably shorter than the previous one used to acquire the pilot training data.
+The envisioned application of training SARDU-Nets is that of finding informative sub-protocols from rich pilot scans. When this has been done, you can ick the indices of the selected measurements and go to the scanner room to set up your new,  shorter qMRI experiment.
 
 
-However, do not forget that SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired.
+However, do not forget that a trained SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with such shorter protocol, and estimate how they would look like if the full protocol had been acquired.
 
 
-[Tutorial 3](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial3.md) will show you how to downsample/upsample qMRI experiments with a trained SARDU-Net.
+[Tutorial 3](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial3.md) shows you how to downsample/upsample qMRI experiments with a trained SARDU-Net.
