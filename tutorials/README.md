@@ -23,7 +23,7 @@ Additionaly, a number of command line tools are provided to help you train and u
 * [`upsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) to upsample a qMRI scan from a SARDU-Net sub-protocol to a richer qMRI protocol.
 
 
-All tools listed above also have a detailed *help manual*, which you can print by simply typing in your terminal `python </PATH/TO/TOOL> --help` (for example, `python train_sardunet_v1.py --help`). These tutorials show SARDU-Net tools at work:  
+All tools listed above also have a detailed *help manual*, which you can print by simply typing in your terminal `python </PATH/TO/TOOL> --help` (e.g. `python train_sardunet_v1.py --help`). These tutorials show SARDU-Net tools at work:  
 
 * [**Tutorial 1**](https://github.com/fragrussu/sardunet/tree/master/tutorials/tutorial1.md) shows how to extract voxels for SARDU-Net training; 
 
