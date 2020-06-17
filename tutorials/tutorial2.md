@@ -81,7 +81,7 @@ Finally, you can also train a SARDU-Net minimising a L1 loss (option `--lossnorm
 In most applications finding informative sub-protocols from rich pilot scans should be enough. You could now pick the indices of the selected measurements and go to the scanner room to set up your new qMRI experiment, which should now be considerably shorter than the previous one used to acquire the pilot training data.
 
 
-However, do not forget that SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired. This is exactly the idea behind the 2019 MICCAI CDMRI workshop challenge known as ['MUDI'](http://cmic.cs.ucl.ac.uk/cdmri19/challenge.html), which SARDU-Net won in October 2019. 
+However, do not forget that SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired. This is exactly the idea behind the 2019 MICCAI CDMRI workshop challenge known as [*MUDI*](http://cmic.cs.ucl.ac.uk/cdmri19/challenge.html), which SARDU-Net won in October 2019. 
 
 
 [Tutorial 3](https://github.com/fragrussu/sardunet/blob/master/tutorials/tutorial3.md) will show you how to downsample/upsample qMRI experiments with a trained SARDU-Net.
