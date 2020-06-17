@@ -11,7 +11,7 @@ Below it is asssumed that you will be using SARDU-Net in a [bash shell](https://
 * Create a training folder - name it, for instance, `sardutrain`.
 
 
-* Put your scans inside `sardutrain`. Make sure your scans are in [NIFTI1](https://nifti.nimh.nih.gov/nifti-1) format (I use [dcm2niix](https://github.com/rordenlab/dcm2niix) to convert DICOMs to NIFTI).
+* Put your scans inside `sardutrain`. Scans must be in [NIFTI1](https://nifti.nimh.nih.gov/nifti-1) format (I use [dcm2niix](https://github.com/rordenlab/dcm2niix) to convert DICOMs to NIFTI).
 
 
 * Make sure you name your scans as `scan_1.nii`, `scan_2.nii`, ... . Each scan should be a 4D NIFTI, with different qMRI measurements arranged along the 4th dimension. All scans should have same number of qMRI measurements, and in the same order.
