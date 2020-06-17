@@ -14,7 +14,7 @@ help(sardunet.sardunet_v1)
 
 Additionaly, a number of command line tools are provided to help you train and use SARDU-Net objects: 
 
-* [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) to extract measurements from qMRI scans storerd in NIFTI format as required to train a SARDU-Net;
+* [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) to extract measurements from qMRI scans as required to train a SARDU-Net;
 
 * [`train_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/train_sardunet_v1.py) to train a SARDU-Net;
 
