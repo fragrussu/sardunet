@@ -9,7 +9,7 @@ In the SARDU-Net framework, the densely-sampled qMRI measurements would typicall
 
 
 # Dependencies
-To use SARDU-Net you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
+To use SARDU-Net you will need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you will also need:
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
