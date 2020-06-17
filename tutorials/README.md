@@ -6,7 +6,7 @@ The python class `sardunet_v1` included in the [`sardunet.py`](https://github.co
 * `predictor()`: to pass data through the *predictor* sub-network of a SARDU-Net;
 * `forward()`: to pass data through the entire SARDU-Net.
 
-Each method has a detailed *help*, which you can print from python this way:
+Each method has a detailed *help manual*. From a [Jupyter notebook](https://jupyter.org) or in your python interpreter prompt, you can check the manual by typing:
 ```
 import sardunet
 help(sardunet.sardunet_v1)
