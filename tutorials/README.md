@@ -20,7 +20,7 @@ Additionaly, a number of command line tools are provided to help you train and u
 
 * [`downsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) to downsample a qMRI scan keeping measurements selected by SARDU-Net;
 
-* [`upsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) to upsamples a qMRI scan acquired according to a SARDU-Net protocol to a richer qMRI protocol.
+* [`upsample_sardunet_v1.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/downsample_sardunet_v1.py) to upsample a qMRI scan from a SARDU-Net sub-protocol to a richer qMRI protocol.
 
 
 All tools listed above have a detailed *help* manual, which you can print by simply typing in your terminal `python </PATH/TO/TOOL> --help` (for example, `python train_sardunet_v1.py --help`). 
