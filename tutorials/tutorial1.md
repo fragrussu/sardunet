@@ -1,4 +1,4 @@
-# Tutorial 1: extract voxels for SARDU-Net training
+# Tutorial 1: extract voxel measurements for SARDU-Net training
 SARDU-Net is designed to identify informative sub-protocols from a set of rich, densely-sampled qMRI scans, given a budget in terms of number of mesaurements. The first thing you will need to do to train a SARDU-Net is to extract the qMRI measurements from voxels of interest within the pilot training scans. 
 
 
