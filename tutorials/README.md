@@ -12,7 +12,7 @@ import sardunet
 help(sardunet.sardunet_v1)
 ```
 
-Additionaly, a number of command line tools are provided to help you train and use SARDU-Net objects. The command line tools available are: 
+Additionaly, a number of command line tools are provided to help you train and use SARDU-Net objects: 
 
 * [`extractvoxels_sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/extractvoxels_sardunet.py) extracts measurements from qMRI scans storerd in NIFTI format to train a SARDU-Net;
 
