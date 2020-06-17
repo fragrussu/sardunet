@@ -76,7 +76,7 @@ Finally, you can also train a SARDU-Net minimising a L1 loss (option `--lossnorm
 
 
 ## c) Use a trained SARDU-Net to upsample qMRI experiments
-The envisioned application of training SARDU-Nets is that of finding informative sub-protocols from rich pilot scans. When this has been done, you can ick the indices of the selected measurements and go to the scanner room to set up your new,  shorter qMRI experiment.
+The envisioned application of training SARDU-Nets is that of finding informative sub-protocols from rich pilot scans. When this has been done, you can collect the indices of the selected measurements and go to the scanner room to set up your new,  shorter qMRI experiment.
 
 
 However, do not forget that a trained SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with such shorter protocol, and estimate how they would look like if the full protocol had been acquired.
