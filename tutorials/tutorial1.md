@@ -39,7 +39,7 @@ if you have masks.
 ## b) Extract voxels
 You are now ready to extract qMRI measurements from the voxels in your training set. Voxels will be split randomly into an actual training set and a validation set. You can control the ratio between the number of voxels kept of training and the number of voxels allocated as validation set).
 
-* Navigate to the `sardutrain` directory, where scans `scan_1.nii`, ..., `scan_N.nii` are stored.
+* Navigate to the `sardutrain` directory, where scans `scan_1.nii`, `scan_2.nii`, ... are stored.
 
 * Extract voxels. If you do not have masks, type:
 ```
