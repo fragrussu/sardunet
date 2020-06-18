@@ -21,16 +21,9 @@ Training results will be stored in an output directory whose name contains all s
 
 The most important output is perhaps `nnet_lossvalmin_measidx.txt`, storing the indices of the selected qMRI measurements (starting from 0!). For example,
 ```
-0
-2
-4
-5
-7
-8
-11
-12
+0  2  3  4  5  6  9 12 13
 ```
-means that measurement 0 was selected, measurement 1 was not, measurement 2 was, measurement 3 was not, etc ...
+means that measurement 0 was selected, measurement 1 was not, measurement 2 was, measurement 3 was as well, etc ...
 
 
 The meaning of all other output files is described briefly below. 
