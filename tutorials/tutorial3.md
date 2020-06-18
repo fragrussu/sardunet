@@ -1,4 +1,4 @@
-# Tutorial 3: downsample/upsample qMRI scans with SARDU-Net
+# Tutorial 3: downsample/upsample qMRI with SARDU-Net
 A trained SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired.
 
 It is assumed that you have run [tutorial 1]() and [tutorial 2]() and you have trained a SARDU-Net. It is also assumed that the variable `SARDULIB` stores the location of the SARDU-Net tools in your file system (for example: `SARDULIB="/Users/myname/lib/python/sardunet/ainas"`), and that the path to the directory storing the trained SARDU-Net is stored in variable `TRAINDIR` (for example: `TRAINDIR=sardutrain/sarduout_nnsel16-12-16_psel0.2_dsel8_nnpred16-12-16_ppred0.2_noepoch500_lr0.001_mbatch1000_seed257891_lossL2_prct99.0_small1e-06`).
