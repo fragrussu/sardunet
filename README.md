@@ -5,7 +5,7 @@ SARDU-Net selects subsets of informative qMRI measurements within lengthy pilot 
 
 The joint optimisation of *selector* and *predictor* DNNs enables the selection of informative sub-protocols of fixed size (i.e. shorter, clinically feasible) from densely-sampled qMRI signals (i.e. longer, difficult to implement in real clinical scenarios). 
 
-In the SARDU-Net framework, the densely-sampled qMRI measurements would typically come from a few rich pilot qMRI scans that are performed any way when setting up new MRI studies for quality control. These could include data from patients and data augmentation techniques could be used to increase signal examples from under-represented tissue types.
+In SARDU-Net, the densely-sampled qMRI measurements would typically come from a few rich pilot qMRI scans that are performed any way when setting up new MRI studies for quality control. These could include data from patients and data augmentation techniques could be used to increase signal examples from under-represented tissue types.
 
 The figure below shows a schematic representation of the general idea behind the SARDU-Net framework.
 
