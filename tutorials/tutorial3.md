@@ -29,9 +29,12 @@ you should see something like
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (this is the reason why we need to specify normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
 
-Below you can find an example of what you can expect to get when upsampling a qMRI protocol with SARDU-Net. The figure shows prostate [diffusion-relaxation images](https://doi.org/10.1101/2020.05.26.116491) obtained at 3Tesla, and illustrates an upsampling from a sub-protocol of 9 contrasts back to the original measurement space of 16 contrasts. *Note that SARDU-Net provides a smooth estimate even for those measurements that were actually acquired as part of a sub-protocol!*
+Below there is an example of what you can expect to get when upsampling a qMRI protocol with SARDU-Net. The figure shows prostate [diffusion-relaxation images](https://doi.org/10.1101/2020.05.26.116491) obtained at 3 Tesla, and illustrates an upsampling from a sub-protocol of 9 contrasts back to the original measurement space of 16 contrasts (so a sub-protocol ~50% shorter than the original data set). *Note that SARDU-Net provides an estimate even of those measurements that were actually acquired as part of the sub-protocol!*
 
 
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduimagedata.png" width="1024">
 
 
+You are now ready to use SARDU-Net if you think it can be useful for your research. Good luck, and feel free to email me any feedback at <f.grussu@ucl.ac.uk>.
+
+*Saludi e trigu meda!*
