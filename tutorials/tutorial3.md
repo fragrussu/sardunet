@@ -19,6 +19,6 @@ Finally, you can use a trained SARDU-Net to estimate how a richer protocol would
 python $SARDULIB/upsample_sardunet_v1.py testscan_down.nii testscan_down_up.nii $TRAINDIR/nnet_lossvalmin.bin $TRAINDIR/max_val.bin $TRAINDIR/min_val.bin
 ```
 
-Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (that is why we passed the normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
+Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (this is the reason why we need to specify normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
 
 
