@@ -9,15 +9,22 @@ Let's say that file `testscan.nii` contains a scan that could be used as test se
 ```
 python $SARDULIB/downsample_sardunet_v1.py testscan.nii testscan_down.nii $TRAINDIR/nnet_lossvalmin.bin
 ```
+and you should see something like:
+
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sardudown.png" width="1024">
+
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements). By default `testscan_down.nii` will be saved using `FLOAT32` precision; use option `--bits 64` if you prefer `FLOAT64`.
 
 
 ## b) Upsample a qMRI scan
-Finally, you can use a trained SARDU-Net to estimate how a richer protocol would look like if you data acquired according to the sub-protocol selected by SARDU-Net. For instance, we can try to upsample back the sub-protocol extracted above (`testscan_down.nii`) and get an estimate of the fully-sampled scan (`testscan_down_up.nii`, an estimate of `testscan.nii` obtained directly from `testscan_down.nii`). You can do this with the `upsample_sardunet_v1.py` tool:
+Finally, you can use a trained SARDU-Net to estimate how a richer protocol would look like if you data acquired according to the sub-protocol selected by SARDU-Net. For instance, we can try to upsample back the sub-protocol extracted above (`testscan_down.nii`) and get an estimate of the fully-sampled scan (`testscan_down_up.nii`, an estimate of `testscan.nii` obtained directly from `testscan_down.nii`). You can do this with the `upsample_sardunet_v1.py` tool: if you run
 ```
 python $SARDULIB/upsample_sardunet_v1.py testscan_down.nii testscan_down_up.nii $TRAINDIR/nnet_lossvalmin.bin $TRAINDIR/max_val.bin $TRAINDIR/min_val.bin
 ```
+you should see something like
+
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduup.png" width="1024">
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (this is the reason why we need to specify normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
 
