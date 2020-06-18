@@ -28,4 +28,9 @@ you should see something like
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (this is the reason why we need to specify normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
 
+Below you can find an example of what you can expect to get when upsampling a qMRI protocol with SARDU-Net. The image below shows prostate [diffusion-relaxation]() diffusion-relaxation data obtained at 3Tesla, and illustrate an upsampling from a sub-protocol of 9 contrasts back to the original measurement space of 16 contrasts.
+
+
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduimages.png" width="1024">
+
 
