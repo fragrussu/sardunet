@@ -11,7 +11,7 @@ python $SARDULIB/downsample_sardunet_v1.py testscan.nii testscan_down.nii $TRAIN
 ```
 and you should see something like:
 
-<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sardudown.png" width="1024">
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sardudown.png" width="512">
 
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements). By default `testscan_down.nii` will be saved using `FLOAT32` precision; use option `--bits 64` if you prefer `FLOAT64`.
@@ -24,7 +24,7 @@ python $SARDULIB/upsample_sardunet_v1.py testscan_down.nii testscan_down_up.nii 
 ```
 you should see something like
 
-<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduup.png" width="1024">
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduup.png" width="512">
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (this is the reason why we need to specify normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
 
