@@ -1,4 +1,4 @@
-# Tutorial 3: use a trained SARDU-Net to downsample/upsample qMRI scans
+# Tutorial 3: downsample/upsample qMRI scans with SARDU-Net
 A trained SARDU-Net has learnt a mapping between a short, clinically viable qMRI protocol and a richer, densely-sampled qMRI scan. You could try to exploit this mapping to upsample qMRI scans acquired with the shorter protocol in question, and estimate how they would look like if the full protocol had been acquired.
 
 It is assumed that you have run [tutorial 1]() and [tutorial 2]() and you have trained a SARDU-Net. It is also assumed that the variable `SARDULIB` stores the location of the SARDU-Net tools in your file system (for example: `SARDULIB="/Users/myname/lib/python/sardunet/ainas"`), and that the path to the directory storing the trained SARDU-Net is stored in variable `TRAINDIR` (for example: `TRAINDIR=sardutrain/sarduout_nnsel16-12-16_psel0.2_dsel8_nnpred16-12-16_ppred0.2_noepoch500_lr0.001_mbatch1000_seed257891_lossL2_prct99.0_small1e-06`).
@@ -28,7 +28,7 @@ you should see something like
 
 Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the indices of the selected measurements), and data normalisation is performed before passing data through the network (this is the reason why we need to specify normalistion parameters `$TRAINDIR/max_val.bin` and `$TRAINDIR/min_val.bin`). Similarly to `downsample_sardunet_v1`, by default `downsample_sardunet_v1.py` saves its prediction using `FLOAT32` precision: use option `--bits 64` if you prefer `FLOAT64` instead.
 
-Below you can find an example of what you can expect to get when upsampling a qMRI protocol with SARDU-Net. The image below shows prostate [diffusion-relaxation]() diffusion-relaxation data obtained at 3Tesla, and illustrate an upsampling from a sub-protocol of 9 contrasts back to the original measurement space of 16 contrasts.
+Below you can find an example of what you can expect to get when upsampling a qMRI protocol with SARDU-Net. The image below shows prostate [diffusion-relaxation](https://doi.org/10.1101/2020.05.26.116491) diffusion-relaxation data obtained at 3Tesla, and illustrate an upsampling from a sub-protocol of 9 contrasts back to the original measurement space of 16 contrasts.
 
 
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduimages.png" width="1024">
