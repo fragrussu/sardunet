@@ -1,4 +1,4 @@
-# SARDU-Net: tutorials
+# SARDU-Net: user guide
 
 The python class `sardunet_v1` included in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file defines the architecture of SARDU-Net. It contains the following methods:
 * `__init__()`: the constructor, to define the hidden layers of a SARDU-Net;
