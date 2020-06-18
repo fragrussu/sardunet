@@ -34,6 +34,6 @@ Above, the SARDU-Net `$TRAINDIR/nnet_lossvalmin.bin` was used (it stores the ind
 Below you can find an example of what you can expect to get when upsampling a qMRI protocol with SARDU-Net. The figure shows prostate [diffusion-relaxation images](https://doi.org/10.1101/2020.05.26.116491) obtained at 3Tesla, and illustrates an upsampling from a sub-protocol of 9 contrasts back to the original measurement space of 16 contrasts. *Note that SARDU-Net provides a smooth estimate even for those measurements that were actually acquired as part of a sub-protocol!*
 
 
-<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduimages.png" width="1024">
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduimagedata.png" width="1024">
 
 
