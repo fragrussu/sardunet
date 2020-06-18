@@ -93,11 +93,10 @@ if __name__ == "__main__":
 
 	### Downsample scan
 	print('')
-	print('      ... downsampling scan.') 
+	print('      ... downsampling scan.')
 	print('')
 	print('          The following measurements out of {} will be kept (indices start from 0):'.format(sin_dims[3]))
-	print('')
-	print(idx_sort)
+	print('          {}'.format(idx_sort))
 	sout_data = sin_data[:,:,:,idx_sort]
 
 	### Save downsampled scan as NIFTI
