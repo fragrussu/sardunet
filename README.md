@@ -7,6 +7,10 @@ The joint optimisation of *selector* and *predictor* DNNs enables the selection 
 
 In the SARDU-Net framework, the densely-sampled qMRI measurements would typically come from a few rich pilot qMRI scans that are performed any way when setting up new MRI studies for quality control. These could include data from patients and data augmentation techniques could be used to increase signal examples from under-represented tissue types.
 
+The figure below shows a schematic representation of the general idea behind the SARDU-Net framework.
+
+<img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/architecture.png" width="512">
+
 
 ## Dependencies
 To use SARDU-Net you will need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you will also need:
