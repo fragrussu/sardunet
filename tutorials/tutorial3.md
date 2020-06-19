@@ -35,6 +35,6 @@ Below there is an example of what you can expect when upsampling a qMRI protocol
 <img src="https://github.com/fragrussu/sardunet/blob/master/tutorials/sarduimagedata.png" width="1024">
 
 
-You are now ready to use SARDU-Net. Good luck, and feel free to email me with feedback or questions at <f.grussu@ucl.ac.uk>.
+You are now ready to use SARDU-Net. Feel free to email me with feedback or questions at <f.grussu@ucl.ac.uk>.
 
 *Saludi e trigu meda!*
