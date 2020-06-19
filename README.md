@@ -9,7 +9,7 @@ In SARDU-Net, the densely-sampled qMRI measurements would typically come from a 
 
 The figure below shows a schematic representation of the general idea behind the SARDU-Net framework.
 
-<img src="https://github.com/fragrussu/sardunet/blob/master/sarduscheme.png" width="1024">
+<img src="https://github.com/fragrussu/sardunet/blob/master/sarduscheme.png" width="768">
 
 
 ## Dependencies
