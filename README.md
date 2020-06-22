@@ -37,7 +37,7 @@ $ git clone https://github.com/fragrussu/sardunet.git
 $ python ./sardunet/ainas/train_sardunet_v1.py --help
 ```
 
-## Python class and tutorials
+## User guide and tutorials
 SARDU-Net is implemented in the `sardunet_v1` python class, defined in the [`sardunet.py`](https://github.com/fragrussu/sardunet/blob/master/ainas/sardunet.py) file. Details on `sardunet_v1` methods can be found in the [user guide](https://github.com/fragrussu/sardunet/blob/master/tutorials/README.md). 
 
 Command line tools are also provided to help you train and use `sardunet_v1` objects. These tutorials demonstrate how to use the tools:  
