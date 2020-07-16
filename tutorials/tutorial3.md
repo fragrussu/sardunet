@@ -37,4 +37,4 @@ Below there is an example of what you can expect when upsampling a qMRI protocol
 
 You are now ready to use SARDU-Net. Feel free to email me with feedback or questions at <f.grussu@ucl.ac.uk>.
 
-*Sorte manna cun is retzas neuronales! Salude e trigu meda!*
+*Good luck and best wishes! · · ·  Sorte manna, salude e trigu meda!*
