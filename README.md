@@ -57,6 +57,7 @@ If you use SARDU-Net, please remember to cite our work:
 
 ## License
 SARDU-Net is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved.
+
 Link to license [here](http://github.com/fragrussu/sardunet/blob/master/LICENSE).
 
 ## Acknowledgements
