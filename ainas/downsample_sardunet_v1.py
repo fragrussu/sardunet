@@ -60,7 +60,7 @@ if __name__ == "__main__":
 	sin_obj = nib.load(args.nifti_in)
 	sin_header = sin_obj.header
 	sin_affine = sin_header.get_best_affine()
-	sin_data = sin_obj.get_data()
+	sin_data = sin_obj.get_fdata()
 	sin_dims = sin_data.shape
 	imgsize = sin_data.shape
 	imgsize = np.array(imgsize)
