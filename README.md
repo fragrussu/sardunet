@@ -56,9 +56,9 @@ If you use SARDU-Net, please remember to cite our work:
 **Disclosure:** FG is supported by PREdICT, a study co-funded by AstraZeneca (Spain). TS is an employee of DeepSpin (Germany) and previously worked for Philips (United Kingdom). MB is an employee of ASG Superconductors. AstraZeneca, Philips, DeepSpin and ASG Superconductors were not involved in the study design; collection, analysis, interpretation of data; manuscript writing and decision to submit the manuscript for publication; or any other aspect concerning this work.
 
 ## License
-SARDU-Net is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved.
+SARDU-Net is distributed under the BSD 2-Clause License, Copyright (c) 2020 University College London. All rights reserved. Link to license [here](http://github.com/fragrussu/sardunet/blob/master/LICENSE).
 
-Link to license [here](http://github.com/fragrussu/sardunet/blob/master/LICENSE).
+**The use of SARDU-Net MUST also comply with the individual licenses of all of its dependencies.**
 
 ## Acknowledgements
 The development of SARDU-Net was funded by the Engineering and Physical Sciences Research Council (EPSRC EP/R006032/1, M020533/1, G007748, I027084, N018702). This project has received funding under the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 634541 and 666992, and from: Rosetrees Trust (UK, funding FG); Prostate Cancer UK Targeted Call 2014 (Translational Research St.2, project reference PG14-018-TR2); Cancer Research UK grant ref. A21099; Spinal Research (UK), Wings for Life (Austria), Craig H. Neilsen Foundation (USA) for jointly funding the INSPIRED study; Wings for Life (#169111); UK Multiple Sclerosis Society (grants 892/08 and 77/2017); the Department of Health's National Institute for Health Research (NIHR) Biomedical Research Centres and UCLH NIHR Biomedical Research Centre; Champalimaud Centre for the Unknown, Lisbon (Portugal); European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 101003390. FG is currently supported by the investigator-initiated PREdICT study at the Vall d’Hebron Institute of Oncology (Barcelona), funded by AstraZeneca and CRIS Cancer Foundation.
